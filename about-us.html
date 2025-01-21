@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/about-us.css">
+    <script src="scripts/nav.js" defer></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+    aria-controls="navbar">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+      <path
+        d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+    </svg>
+  </button>
+
+  <nav id="navbar">
+    <ul>
+      <li>
+        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+            <path
+              d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+          </svg>
+        </button>
+      </li>
+      <li class="home-li">LOGO</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="SPONSOR.html">SPONSOR</a></li>
+      <li><a href="Event.html">EVENT</a></li>
+      <li><a href="about-us.html">ABOUT</a></li>
+    </ul>
+  </nav>
+  <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    <div class="container">
+        <header class="header">
+            <h1>About Us</h1>
+            <p>Building the future through innovation and creativity</p>
+        </header>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <h2>Our Mission</h2>
+                <p>We strive to create innovative solutions that transform the way people interact with technology. Our commitment to excellence drives us to push boundaries and explore new possibilities.</p>
+            </div>
+
+            <div class="about-card">
+                <h2>Our Vision</h2>
+                <p>To become a global leader in technological innovation, fostering a world where technology enhances human potential and creates positive change in society.</p>
+            </div>
+
+            <div class="about-card">
+                <h2>Our Values</h2>
+                <p>Innovation, integrity, collaboration, and excellence form the cornerstone of our organization. We believe in creating lasting value for our clients and community.</p>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Team Member 1">
+                    <h3>Name Name</h3>
+                    <p>CEO & Founder</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Team Member 2">
+                    <h3>Name Name</h3>
+                    <p>Lead Developer</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Team Member 3">
+                    <h3>Name Name</h3>
+                    <p>Design Director</p>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- card 6 -->
+<footer class="footer">
+    <div>
+        <h3>About Us</h3>
+        <p>We create awesome tools for cybersecurity & pentesting.</p>
+    </div>
+    <div>
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+  </footer>
+</body>
+</html>
