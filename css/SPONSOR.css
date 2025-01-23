@@ -244,7 +244,8 @@ nav a.accent-link {
 .header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    background: linear-gradient(45deg, #FFD700, #FFA500);
+    /* background: linear-gradient(45deg, #FFD700, #FFA500); */
+    background: linear-gradient(45deg, #E5E4E2, #B0B0B0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -269,6 +270,9 @@ nav a.accent-link {
 .gold .tier-title {
     color: #FFD700;
 }
+.Platinum .tier-title {
+    color: #E5E4E2;
+}
 
 .silver .tier-title {
     color: #C0C0C0;
@@ -283,6 +287,9 @@ nav a.accent-link {
     gap: 2rem;
 }
 
+.Platinum .sponsor-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 .gold .sponsor-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -303,6 +310,9 @@ nav a.accent-link {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.Platinum .sponsor-card {
+    border: 2px solid #E5E4E2;
+}
 .gold .sponsor-card {
     border: 2px solid #FFD700;
 }
@@ -392,5 +402,19 @@ nav a.accent-link {
   scrollbar-color: #2D2B55 #04031A;
 }
 
+@media (max-width: 768px) {
+  .logo-im{
+    margin-right: 420px;
+    margin-left: 40px;
+  }
 
+  .event-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.logo-im{
+  margin-right: 420px;
+   margin-left: 10px;
+}
 

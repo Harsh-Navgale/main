@@ -402,3 +402,19 @@ nav a.accent-link {
   scrollbar-color: #2D2B55 #04031A;
 }
 
+
+@media (max-width: 768px) {
+  .logo-im{
+    margin-right: 420px;
+    margin-left: 40px;
+  }
+
+  .event-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.logo-im{
+  margin-right: 420px;
+   margin-left: 10px;
+}
