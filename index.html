@@ -2,312 +2,391 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HICAThon 1.0</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="scripts/nav.js" defer></script>
-  <script src="scripts/time.js" defer></script>
-  <script src="scripts/scroll.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HICAThon 1.0</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/time.js" defer></script>
+    <script src="scripts/scroll.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="img/frame 123.png" type="image/icon type">
 
-  <style>
-    
-       
-
-        
-  </style>
 </head>
 
 <body>
 
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
-    aria-controls="navbar">
-    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
-      <path
-        d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
-    </svg>
-  </button>
-
-  <nav id="navbar">
-    <ul>
-      <li>
-        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
-          <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
+    <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false"
+        aria-controls="navbar">
+        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#c9c9c9">
             <path
-              d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
-          </svg>
-        </button>
-      </li>
-      <li class="home-li">LOGO</a></li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="SPONSOR.html">SPONSOR</a></li>
-      <li><a href="Event.html">EVENT</a></li>
-      <li><a href="about-us.html">ABOUT</a></li>
-    </ul>
-  </nav>
+                d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z" />
+        </svg>
+    </button>
 
-  <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
+    <nav id="navbar">
+        <ul>
+            <li>
+                <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
+                        fill="#c9c9c9">
+                        <path
+                            d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z" />
+                    </svg>
+                </button>
+            </li>
+            <li><img src="img/frame 123.png" height="50px" width="50px" class="logo-im" alt=""></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="SPONSOR.html">SPONSOR</a></li>
+            <li><a href="Event.html">EVENT</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="about-us.html">ABOUT</a></li>
+        </ul>
+    </nav>
 
-  <script src="scripts/script.js"></script>
-  <!-- <div class="card"></div> -->
+    <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.min.js"></script>
 
-  <div class="hero_sec">
+    <script src="scripts/script.js"></script>
+    <!-- <div class="card"></div> -->
 
-    <!-- <div>
+    <div class="hero_sec">
+
+        <!-- <div>
         <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h1><br>
     </div> -->
-    <div class="clock-container">
-      <div class="clock">
+        <div class="clock-container">
+            <div class="clock">
 
-        <div class="time-segment" id="days">00
-          <div class="segment-label">Hours</div>
-        </div>
-        <div class="time-segment" id="hours">00
-          <div class="segment-label">Minutes</div>
-        </div>
-        <div class="time-segment" id="minutes">00
-          <div class="segment-label">Seconds</div>
-        </div>
-        <div class="time-segment" id="seconds">00
-            <div class="segment-label">Seconds</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-
-  <section class="section">
-    <h2 class="section-title">Event Details</h2>
-    <div class="event-details">
-        <div class="event-details-content">
-            <p>HICAThon 1.0 is an inaugural hacker summit organized by the HICA club, scheduled for 20 and 21 March. This event will bring together cybersecurity professionals, enthusiasts, and students from across India to engage in knowledge-sharing, skill-building, and networking opportunities. The summit will include expert sessions, panel discussions, and an 8-hour Capture the Flag (CTF) competition.</p>
-        </div>
-        <div class="event-image">
-            <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Cybersecurity Event">
+                <div class="time-segment" id="days">00
+                    <div class="segment-label">Hours</div>
+                </div>
+                <div class="time-segment" id="hours">00
+                    <div class="segment-label">Minutes</div>
+                </div>
+                <div class="time-segment" id="minutes">00
+                    <div class="segment-label">Seconds</div>
+                </div>
+                <div class="time-segment" id="seconds">00
+                    <div class="segment-label">Seconds</div>
+                </div>
+            </div>
         </div>
     </div>
-</section>
 
-<section class="section">
-    <h2 class="section-title">March 20th Schedule</h2>
-    <div class="day-schedule">
-        <div class="schedule-item">
-            <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Expert Session" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
-            <h3>Expert Session</h3>
-            <p>Join leading cybersecurity experts as they explore emerging trends, best practices, and cutting-edge solutions shaping the future of the industry. Gain valuable insights into the latest developments and strategies for navigating the evolving cybersecurity landscape.</p>
-        </div>
-        <div class="schedule-item">
-            <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Panel Discussion" style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
-            <h3>Panel Discussion</h3>
-            <p>Engage with a panel of distinguished experts in a thought-provoking discussion on critical cybersecurity challenges and future directions. This session will delve into key issues, offering diverse perspectives on how the industry is adapting and innovating to stay ahead of emerging threats.</p>
-        </div>
-    </div>
-</section>
 
-<section class="section">
-    <h2 class="section-title">March 21st - CTF Competition</h2>
-    <div class="ctf-section">
-        <div class="ctf-content">
-            <h3 class="ctf-title">Capture The Flag</h3>
-            <p class="ctf-description">A challenging 8-hour Capture the Flag event designed to test and enhance participants' problem-solving and cybersecurity skills.</p>
-            
-            <div class="ctf-highlights">
-                <div class="highlight-item">
-                    <span class="highlight-icon">⏱️</span>
-                    <span>8 Hours Duration</span>
+    <section class="section">
+        <h2 class="section-title">Event Details</h2>
+        <div class="event-details">
+            <div class="event-details-content">
+                <p>HICAThon 1.0 is an inaugural hacker summit organized by the HICA club, scheduled for 20 and 21 March.
+                    This event will bring together cybersecurity professionals, enthusiasts, and students from across
+                    India to engage in knowledge-sharing, skill-building, and networking opportunities. The summit will
+                    include expert sessions, panel discussions, and an 8-hour Capture the Flag (CTF) competition.</p>
+            </div>
+            <div class="event-image">
+                <img src="img/Intro.gif" alt="Cybersecurity Event">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">March 20th Schedule</h2>
+        <div class="day-schedule">
+            <div class="schedule-item">
+                <img src="img/3As-of-active-listening-Adjustment.png" alt="Expert Session"
+                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <h3>Expert Session</h3>
+                <p>Join leading cybersecurity experts as they explore emerging trends, best practices, and cutting-edge
+                    solutions shaping the future of the industry. Gain valuable insights into the latest developments
+                    and strategies for navigating the evolving cybersecurity landscape.</p>
+            </div>
+            <div class="schedule-item">
+                <img src="img/group-training-session-with-attentive-participants-expert-coaches-effective-learning-dev_1003076-12502.avif" alt="Panel Discussion"
+                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem;">
+                <h3>Panel Discussion</h3>
+                <p>Engage with a panel of distinguished experts in a thought-provoking discussion on critical
+                    cybersecurity challenges and future directions. This session will delve into key issues, offering
+                    diverse perspectives on how the industry is adapting and innovating to stay ahead of emerging
+                    threats.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">March 21st - CTF Competition</h2>
+        <div class="ctf-section">
+            <div class="ctf-content">
+                <h3 class="ctf-title">Capture The Flag</h3>
+                <p class="ctf-description">A challenging 8-hour Capture the Flag event designed to test and enhance
+                    participants' problem-solving and cybersecurity skills.</p>
+
+                <div class="ctf-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-icon">⏱️</span>
+                        <span>8 Hours Duration</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🎯</span>
+                        <span>Multiple Challenges</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🏆</span>
+                        <span>Exciting Prizes</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🔒</span>
+                        <span>Real-world Scenarios</span>
+                    </div>
                 </div>
-                <div class="highlight-item">
-                    <span class="highlight-icon">🎯</span>
-                    <span>Multiple Challenges</span>
+
+                <div class="timer-section">
+                    <h4 class="timer-title">Competition Duration</h4>
+                    <div class="timer-value">8 Hours</div>
                 </div>
-                <div class="highlight-item">
-                    <span class="highlight-icon">🏆</span>
-                    <span>Exciting Prizes</span>
-                </div>
-                <div class="highlight-item">
-                    <span class="highlight-icon">🔒</span>
-                    <span>Real-world Scenarios</span>
+                <div class="Register">
+                    <a href="https://www.google.com" class="register-button">Register Now</a>
                 </div>
             </div>
 
-            <div class="timer-section">
-                <h4 class="timer-title">Competition Duration</h4>
-                <div class="timer-value">8 Hours</div>
+            <div class="ctf-image">
+                <img src="img/ctf.jpg" alt="CTF Competition">
             </div>
         </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Event Information</h2>
+        <div class="location-section">
+            <div class="location-info">
+                <div class="highlight-box">
+                    <h3>Location</h3>
+                    <p>Symbiosis Skills & Professional University<br>
+                        Mumbai - Pune Expy, Kiwale, Ravet,<br>
+                        Pimpri-Chinchwad, Maharashtra 412101</p>
+                </div>
+
+                <div class="prize-pool">
+                    <h3>Prize Pool Worth ₹2.5 Lakhs</h3>
+                    <p>💰 50K Cash Prize & Vouchers</p>
+                    <p>🏆 Certifications</p>
+                </div>
+
+                <div class="highlight-box">
+                    <h3>Event Mode</h3>
+                    <div class="mode-badge">Offline</div>
+                    <p>Organized By: HICA</p>
+                </div>
+            </div>
+            <div class="location-image">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.0776303933094!2d73.71573007524023!3d18.660512082460347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be800e31bcf833d%3A0xffcc0ae5fbd4c5cd!2sSymbiosis%20Skills%20%26%20Professional%20University.!5e0!3m2!1sen!2sin!4v1737556769255!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         
-        <div class="ctf-image">
-            <img src="img/seminar-concept-illustration_114360-7700.avif" alt="CTF Competition">
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <h2 class="section-title">Event Information</h2>
-    <div class="location-section">
-        <div class="location-info">
-            <div class="highlight-box">
-                <h3>Location</h3>
-                <p>Symbiosis Institute Of Technology<br>
-                Mumbai - Pune Expy, Kiwale, Ravet,<br>
-                Pimpri-Chinchwad, Maharashtra 412101</p>
-            </div>
-
-            <div class="prize-pool">
-                <h3>Prize Pool Worth ₹2.5 Lakhs</h3>
-                <p>💰 50K Cash Prize & Vouchers</p>
-                <p>🏆 Certifications</p>
-            </div>
-
-            <div class="highlight-box">
-                <h3>Event Mode</h3>
-                <div class="mode-badge">Hybrid (Online and Offline)</div>
-                <p>Organized By: HICA</p>
             </div>
         </div>
-        <div class="location-image">
-            <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Symbiosis Institute Of Technology">
-        </div>
-    </div>
-</section>
+    </section>
 
-  <!-- card 5 -->
-  
-  <section class="speakers-section">
-    <div class="speakers-container">
+    <!-- card 5 -->
+
+    <section class="speakers-section">
+        <div class="speakers-container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Speakers</h2>
+                <p class="section-subtitle">Learn from industry experts and thought leaders in cybersecurity</p>
+            </div>
+
+            <div class="speakers-grid">
+                <!-- Speaker 1 -->
+                <div class="speaker-card">
+                    <div class="speaker-image-container">
+                        <img src="img/Speakers/1699460061022.jpeg" alt="Aditya Shende"
+                            class="speaker-image">
+                    </div>
+                    <div class="speaker-info">
+                        <div class="speaker-tag">BugBounty Hunter</div>
+                        <h3 class="speaker-name">Aditya Shende</h3>
+                        <p class="speaker-role">Threat Researcher </p>
+                        <p class="speaker-company">@BforeAI</p>
+                        <p class="speaker-description">A seasoned Offensive Security Professional with a Master’s degree from the University of East Anglia, UK, this expert brings robust skills in web exploitation, API security, automated exploit development, and mobile platform security.</p>
+                        <div class="speaker-social">
+                            <a href="#" class="social-icon">🌐</a>
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐦</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 2 -->
+                <div class="speaker-card">
+                    <div class="speaker-image-container">
+                        <img src="img/Speakers/1697308816983.jpeg" alt="Rishika Desai"
+                            class="speaker-image">
+                    </div>
+                    <div class="speaker-info">
+                        <div class="speaker-tag">Security Analyst</div>
+                        <h3 class="speaker-name">Rishika Desai</h3>
+                        <p class="speaker-role">Threat Researcher</p>
+                        <p class="speaker-company">@BforeAI</p>
+                        <p class="speaker-description">Threat Researcher specializing in Web Security, Threat Intelligence, Malware Analysis with expertise in vulnerability research and cybersecurity community collaboration.</p>
+                        <div class="speaker-social">
+                            <a href="#" class="social-icon">🌐</a>
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐦</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 3 -->
+                <div class="speaker-card">
+                    <div class="speaker-image-container">
+                        <img src="img/Speakers/1729062276544.jpeg" alt="Michael Chen"
+                            class="speaker-image">
+                    </div>
+                    <div class="speaker-info">
+                        <div class="speaker-tag">Ethical Hacker</div>
+                        <h3 class="speaker-name">Arun Mane</h3>
+                        <p class="speaker-role">Founder and CEO</p>
+                        <p class="speaker-company">Amynasec Labs & UnoAcademy</p>
+                        <p class="speaker-description">A leading cybersecurity expert specializing in Vehicle, IoT, ICS, and IoMT security, with expertise in Hardware Security, SCADA, Firmware Reverse Engineering, and security audits aligned with ISO 62443, ISO 21434, and NIST.</p>
+                        <div class="speaker-social">
+                            <a href="#" class="social-icon">🌐</a>
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐦</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 4 -->
+                <div class="speaker-card">
+                    <div class="speaker-image-container">
+                        <img src="img/Speakers/1729052465554.jpeg" alt="Omkar Mali" class="speaker-image">
+                    </div>
+                    <div class="speaker-info">
+                        <div class="speaker-tag">Penetration Tester</div>
+                        <h3 class="speaker-name">Omkar Mali</h3>
+                        <p class="speaker-role">Security Researcher</p>
+                        <p class="speaker-company">@Yogosha Strike Force</p>
+                        <p class="speaker-description">A Security Researcher specializing in Hardware, IoT, and Automotive Cybersecurity, with expertise in Hardware Security, RF Protocols, and Firmware Reverse Engineering, leading The Marathi Hackers Group for collaboration and knowledge sharing.</p>
+                        <div class="speaker-social">
+                            <a href="#" class="social-icon">🌐</a>
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐦</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaker 5 -->
+                <!-- <div class="speaker-card">
+                    <div class="speaker-image-container">
+                        <img src="img/seminar-concept-illustration_114360-7700.avif" alt="David Wilson"
+                            class="speaker-image">
+                    </div>
+                    <div class="speaker-info">
+                        <div class="speaker-tag">Security Architect</div>
+                        <h3 class="speaker-name">David Wilson</h3>
+                        <p class="speaker-role">Cloud Security Architect</p>
+                        <p class="speaker-company">CloudGuard Systems</p>
+                        <p class="speaker-description">Expert in cloud security architecture and DevSecOps with a focus
+                            on secure infrastructure design.</p>
+                        <div class="speaker-social">
+                            <a href="#" class="social-icon">🌐</a>
+                            <a href="#" class="social-icon">💼</a>
+                            <a href="#" class="social-icon">🐦</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- card 6 -->
+    
+    <section class="sponsorship">
         <div class="section-header">
-            <h2 class="section-title">Meet Our Speakers</h2>
-            <p class="section-subtitle">Learn from industry experts and thought leaders in cybersecurity</p>
+            <h2 class="section-title">Call For Sponsor</h2>
         </div>
+        <p>HICA brings together passionate cybersecurity
+            enthusiasts dedicated to securing the digital world. We conduct workshops, CTF competitions, and community
+            events to promote ethical hacking, cyber awareness, and advanced security research.</p>
+            <a href="mailto:hicasspu@bytebloggerbase.com" class="contact-email">hicasspu@bytebloggerbase.com</a>
+            <p>
+                <a href="SPONSOR MIX.pdf" class="more-details">View Sponsorship Details →</a>
+            </p>
+        </section>
+        
+    <!-- card 7 -->
 
-        <div class="speakers-grid">
-            <!-- Speaker 1 -->
-            <div class="speaker-card">
-                <div class="speaker-image-container">
-                    <img src="img/seminar-concept-illustration_114360-7700.avif" alt="John Smith" class="speaker-image">
+
+    <section class="unique-bg-section">
+        <div class="unique-container">
+            <div class="section-header">
+                <h2 class="section-title">Our Previous Events</h2>
+            </div>
+            <div class="unique-grid">
+                <div class="unique-card">
+                    <img src="img/gallery/5.jpg" alt="Tech Conference"
+                        class="unique-image">
+                    <div class="unique-content">
+                        <div class="unique-date">18<sup>th</sup> october, 2024</div>
+                        <h3 class="speaker-name">From Hackers to Catching Hackers</h3>
+                        <!-- <h3 class="unique-title">Annual Tech Conference</h3> -->
+                        <p class="unique-description"> A journey from exploring vulnerabilities to defending against them. 🚀🔍</p>
+                    </div>
                 </div>
-                <div class="speaker-info">
-                    <div class="speaker-tag">Keynote Speaker</div>
-                    <h3 class="speaker-name">John Smith</h3>
-                    <p class="speaker-role">Chief Security Officer</p>
-                    <p class="speaker-company">CyberTech Solutions</p>
-                    <p class="speaker-description">Leading expert in cloud security and threat intelligence with over 15 years of experience in cybersecurity industry.</p>
-                    <div class="speaker-social">
-                        <a href="#" class="social-icon">🌐</a>
-                        <a href="#" class="social-icon">💼</a>
-                        <a href="#" class="social-icon">🐦</a>
+                <div class="unique-card">
+                    <img src="img/gallery/7.jpg" alt="Design Workshop"
+                        class="unique-image">
+                    <div class="unique-content">
+                        <div class="unique-date">1<sup>st</sup> october, 2024</div>
+                        <h3 class="speaker-name">Securing the smart world</h3>
+                        <p class="unique-description">From web applications to critical infrastructure, ensuring safety in an interconnected world. 🔒🌍</p>
+                    </div>
+                </div>
+                <div class="unique-card">
+                    <img src="img/gallery/11.jpg" alt="Startup Meetup"
+                        class="unique-image">
+                    <div class="unique-content">
+                        <div class="unique-date">1<sup>st</sup> october, 2024</div>
+                        <h3 class="speaker-name">Hacking the connected cars</h3>
+                        <p class="unique-description">Exploring vulnerabilities in modern vehicles to enhance security🚗🔍.</p>
                     </div>
                 </div>
             </div>
+            <a href="gallery.html" class="unique-button">View Gallery</a>
+        </div>
+    </section>
 
-            <!-- Speaker 2 -->
-            <div class="speaker-card">
-                <div class="speaker-image-container">
-                    <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Sarah Johnson" class="speaker-image">
-                </div>
-                <div class="speaker-info">
-                    <div class="speaker-tag">Security Expert</div>
-                    <h3 class="speaker-name">Sarah Johnson</h3>
-                    <p class="speaker-role">Security Research Director</p>
-                    <p class="speaker-company">SecureNet Technologies</p>
-                    <p class="speaker-description">Specializes in malware analysis and incident response, with expertise in developing security frameworks.</p>
-                    <div class="speaker-social">
-                        <a href="#" class="social-icon">🌐</a>
-                        <a href="#" class="social-icon">💼</a>
-                        <a href="#" class="social-icon">🐦</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Speaker 3 -->
-            <div class="speaker-card">
-                <div class="speaker-image-container">
-                    <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Michael Chen" class="speaker-image">
-                </div>
-                <div class="speaker-info">
-                    <div class="speaker-tag">Ethical Hacker</div>
-                    <h3 class="speaker-name">Michael Chen</h3>
-                    <p class="speaker-role">Penetration Testing Lead</p>
-                    <p class="speaker-company">Ethical Security Labs</p>
-                    <p class="speaker-description">Expert in penetration testing and vulnerability assessment with a focus on web application security.</p>
-                    <div class="speaker-social">
-                        <a href="#" class="social-icon">🌐</a>
-                        <a href="#" class="social-icon">💼</a>
-                        <a href="#" class="social-icon">🐦</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Speaker 4 -->
-            <div class="speaker-card">
-                <div class="speaker-image-container">
-                    <img src="img/seminar-concept-illustration_114360-7700.avif" alt="Emily Davis" class="speaker-image">
-                </div>
-                <div class="speaker-info">
-                    <div class="speaker-tag">Security Analyst</div>
-                    <h3 class="speaker-name">Emily Davis</h3>
-                    <p class="speaker-role">Threat Intelligence Manager</p>
-                    <p class="speaker-company">DefendX Security</p>
-                    <p class="speaker-description">Specialized in threat intelligence and digital forensics with extensive experience in incident handling.</p>
-                    <div class="speaker-social">
-                        <a href="#" class="social-icon">🌐</a>
-                        <a href="#" class="social-icon">💼</a>
-                        <a href="#" class="social-icon">🐦</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Speaker 5 -->
-            <div class="speaker-card">
-                <div class="speaker-image-container">
-                    <img src="img/seminar-concept-illustration_114360-7700.avif" alt="David Wilson" class="speaker-image">
-                </div>
-                <div class="speaker-info">
-                    <div class="speaker-tag">Security Architect</div>
-                    <h3 class="speaker-name">David Wilson</h3>
-                    <p class="speaker-role">Cloud Security Architect</p>
-                    <p class="speaker-company">CloudGuard Systems</p>
-                    <p class="speaker-description">Expert in cloud security architecture and DevSecOps with a focus on secure infrastructure design.</p>
-                    <div class="speaker-social">
-                        <a href="#" class="social-icon">🌐</a>
-                        <a href="#" class="social-icon">💼</a>
-                        <a href="#" class="social-icon">🐦</a>
-                    </div>
-                </div>
+    <!-- card 6 -->
+    <footer class="footer">
+        <div>
+            <img src="img/Frame 4036.png" height="100px" width="300px" alt="">
+            
+        </div>
+        <div>
+            <h3>About Us</h3>
+           
+            <p>A cybersecurity-driven community fostering innovation, knowledge sharing, and ethical hacking excellence.</p>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="SPONSOR.html">SPONSOR</a></li>
+                <li><a href="Event.html">EVENT</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about-us.html">ABOUT</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/hica_sspu"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/HICASSPU"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/company/hica-sspu/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@HICA_CLUB"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
-    </div>
-</section>
-  
-  
-  <!-- card 6 -->
-<footer class="footer">
-  <div>
-      <h3>About Us</h3>
-      <p>We create awesome tools for cybersecurity & pentesting.</p>
-  </div>
-  <div>
-      <h3>Quick Links</h3>
-      <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Tools</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-      </ul>
-  </div>
-  <div>
-      <h3>Follow Us</h3>
-      <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-      </div>
-  </div>
-</footer>
+      </footer>
 
 
 </body>
