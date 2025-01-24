@@ -1003,7 +1003,7 @@ canvas {
 
 .logo-im{
   margin-right: 420px;
-   margin-left: 10px;
+   margin-left: 25px;
 }
 
 
@@ -1018,3 +1018,63 @@ canvas {
     object-fit: cover;
   }
 }
+
+.event-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.event-logo img {
+  max-width: 150px;
+  height: auto;
+  margin-left: 85%;
+}
+.flex-loc{
+  display: flex;
+}
+
+@media (max-width: 768px) {
+.event-logo img {
+  max-width: 150px;
+  height: auto;
+  margin-left: 85%;
+  display: none;
+}
+.Register-nav {
+  text-align: center;
+  margin-left: 0px;
+}
+}
+
+
+.Register-nav {
+  text-align: center;
+  margin-left: 225px;
+}
+
+.register-button-nav {
+  display: inline-block;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(45deg, #00ffcc, #33ccff);
+  border: none;
+  border-radius: 25px;
+  color: #04031A;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-button-nav:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.3);
+}
+@media (max-width: 768px) {
+ 
+  .Register-nav {
+    text-align: center;
+    margin-left: 0px;
+  }
+  }
