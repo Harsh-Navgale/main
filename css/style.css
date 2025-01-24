@@ -1002,20 +1002,43 @@ canvas {
 }
 
 .logo-im{
-  margin-right: 420px;
+  margin-right: 10px;
+  margin-left: 25px;
+  height: 70px;
+  width: 270px;
+}
+
+.logo-him{
+  margin-right: 15px;
    margin-left: 25px;
 }
 
+.logo-fm{
+  margin-right: px;
+   margin-left: 100px;
+}
 
 @media (max-width: 768px) {
+  .logo-him{
+    margin-right: 50px;
+    margin-left: 10px;
+  }
+
   .logo-im{
-    margin-right: 420px;
-    margin-left: 40px;
+    margin-right: 50px;
+    margin-left: 10px;
+    height:50px;
+    width: 180px;
   }
 
   .event-image img {
     height: 100%;
     object-fit: cover;
+  }
+
+  .logo-fm{
+    margin-right: px;
+    margin-left: 0px;
   }
 }
 
