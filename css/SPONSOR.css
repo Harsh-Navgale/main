@@ -291,7 +291,7 @@ nav a.accent-link {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .gold .sponsor-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .silver .sponsor-grid {
@@ -299,7 +299,7 @@ nav a.accent-link {
 }
 
 .partner .sponsor-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .sponsor-card {
